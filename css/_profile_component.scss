@@ -9,6 +9,7 @@
     align-self: center;
 }
 
+// setting some peramiters for the card with min and max widths
 .profile-card {
     min-width: 500px;
     max-width: 951px;
@@ -18,6 +19,7 @@
     border: 1px solid $border;
 
 }
+// using flex wrap to space out the objects and using a grid with fr units
 .wrapper {
     background-color: $white; 
     display: grid;
@@ -27,6 +29,7 @@
     padding: .5rem 0;
 
 }
+// nesting in the elements in this class
 .profile {
     padding: 0 2rem 2rem 2rem ;
     display: flex;
@@ -67,6 +70,7 @@
 
 }
 
+// adding a media query to make it responsive
 @media screen and (max-width: 800px) {
     .wrapper {
         grid-template-columns: 1fr;
